@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.fmohammadi.myshop.SplashScreenActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logoShopping"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/shopping" />
+
+    <TextView
+        android:id="@+id/nameStore"
+        style="@style/txtSplashScreen"
+        android:text="@string/nameStore"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptions"
+        style="@style/txtSplashScreen"
+        android:text="@string/descriptions"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        style="@style/txtSplashScreen"
+        android:text="@string/numberPhone"
+        android:textSize="18sp" />
+</LinearLayout>

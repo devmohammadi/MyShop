@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyShop</string>
+    <string name="nameStore">فروشگاه الکترونیکی محمدی</string>
+    <string name="descriptions">خریدی متفاوت را با ما تجربه کنید</string>
+    <string name="numberPhone">09140297584</string>
+    <string name="email">ایمیــل :</string>
+    <string name="login">ورود</string>
+    <string name="password">رمز عبور :</string>
+    <string name="register">ثبت نام نکرده ام</string>
+    <string name="registerTitle">ثبت نام</string>
+    <string name="rePassword">تکرار رمز:</string>
+    <string name="name">نــام :</string>
+    <string name="enterName">نام خود را وارد کنید</string>
+    <string name="enterEmail">لطفا ایمیل خود را وارد کنید</string>
+    <string name="enterPassword">لطفا رمز خود را وارد کنید</string>
+    <string name="enterRePassword">لطفا تکرار رمز خود را وارد کنید</string>
+</resources>
