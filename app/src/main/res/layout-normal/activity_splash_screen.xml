@@ -33,5 +33,5 @@
     <TextView
         android:id="@+id/phoneNumber"
         style="@style/txtSplashScreen"
-        android:text="@string/numberPhone"/>
+        android:text="@string/numberPhone" />
 </LinearLayout>

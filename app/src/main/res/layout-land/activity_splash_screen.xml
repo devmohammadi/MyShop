@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/colorBg"
     android:gravity="center"
+    android:orientation="horizontal"
     android:layout_margin="10dp"
-    android:orientation="vertical"
     tools:context="com.fmohammadi.myshop.SplashScreenActivity">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -16,6 +16,11 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/shopping" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/nameStore"
@@ -28,10 +33,11 @@
     <TextView
         android:id="@+id/descriptions"
         style="@style/txtSplashScreen"
-        android:text="@string/descriptions" />
+        android:text="@string/descriptions"/>
 
     <TextView
         android:id="@+id/phoneNumber"
         style="@style/txtSplashScreen"
-        android:text="@string/numberPhone"/>
+        android:text="@string/numberPhone" />
+    </LinearLayout>
 </LinearLayout>

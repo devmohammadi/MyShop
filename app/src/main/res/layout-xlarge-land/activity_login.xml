@@ -17,10 +17,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
-            android:padding="10dp">
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/lblLogin"
@@ -70,14 +70,16 @@
                     style="@style/styleButton"
                     android:layout_below="@id/lblPassword"
                     android:layout_marginTop="30dp"
+                    android:layout_toStartOf="@id/lblPassword"
                     android:text="@string/login" />
 
                 <Button
                     android:id="@+id/loginBtnRegister"
                     style="@style/styleButton"
                     android:layout_below="@id/loginBtnLogin"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginBottom="50dp"
+                    android:layout_toStartOf="@id/lblPassword"
                     android:text="@string/register" />
 
             </RelativeLayout>

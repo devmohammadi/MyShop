@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBg"
     android:gravity="center"
-    android:layout_margin="10dp"
+    android:layout_margin="15dp"
     android:orientation="vertical"
     tools:context="com.fmohammadi.myshop.SplashScreenActivity">
 
@@ -22,7 +22,7 @@
         style="@style/txtSplashScreen"
         android:text="@string/nameStore"
         android:textColor="@android:color/black"
-        android:textSize="30sp"
+        android:textSize="37sp"
         android:textStyle="bold" />
 
     <TextView
@@ -33,5 +33,5 @@
     <TextView
         android:id="@+id/phoneNumber"
         style="@style/txtSplashScreen"
-        android:text="@string/numberPhone"/>
+        android:text="@string/numberPhone" />
 </LinearLayout>

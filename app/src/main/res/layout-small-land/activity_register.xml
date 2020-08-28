@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
-            android:padding="10dp">
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/lblRegister"
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lblRegister"
-                android:padding="20dp">
+                android:padding="7dp">
 
                 <TextView
                     android:id="@+id/lblName"
@@ -99,20 +99,16 @@
                     android:inputType="textPassword"
                     tools:ignore="LabelFor,TextFields" />
 
-
                 <Button
                     android:id="@+id/registerBtnRegister"
                     style="@style/styleButton"
-                    android:layout_below="@id/lblRePassword"
-                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/registerRePassword"
                     android:text="@string/registerTitle" />
 
                 <Button
                     android:id="@+id/registerBtnLogin"
                     style="@style/styleButton"
                     android:layout_below="@id/registerBtnRegister"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="50dp"
                     android:text="@string/login" />
 
             </RelativeLayout>

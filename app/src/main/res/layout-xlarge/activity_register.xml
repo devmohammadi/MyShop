@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.fmohammadi.myshop.LoginActivity">
+    tools:context="com.fmohammadi.myshop.RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,32 +17,49 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <TextView
-                android:id="@+id/lblLogin"
+                android:id="@+id/lblRegister"
                 style="@style/titlePage"
-                android:text="@string/login" />
+                android:text="@string/registerTitle" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/lblLogin"
+                android:layout_below="@id/lblRegister"
                 android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/lblName"
+                    style="@style/titleTextView"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/registerName"
+                    style="@style/inputEditText"
+                    android:layout_marginTop="0dp"
+                    android:layout_toStartOf="@id/lblRePassword"
+                    android:autofillHints=""
+                    android:hint="@string/enterName"
+                    android:inputType="textPersonName" />
+
 
                 <TextView
                     android:id="@+id/lblEmail"
                     style="@style/titleTextView"
+                    android:layout_below="@id/lblName"
                     android:text="@string/email" />
 
+
                 <EditText
-                    android:id="@+id/loginEmail"
+                    android:id="@+id/registerEmail"
                     style="@style/inputEditText"
-                    android:layout_marginTop="0dp"
-                    android:layout_toStartOf="@id/lblPassword"
+                    android:layout_below="@id/registerName"
+                    android:layout_toStartOf="@id/lblRePassword"
                     android:autofillHints=""
                     android:hint="@string/enterEmail"
                     android:inputType="textEmailAddress" />
@@ -54,31 +71,49 @@
                     android:layout_below="@id/lblEmail"
                     android:text="@string/password" />
 
+
                 <EditText
-                    android:id="@+id/loginPassword"
+                    android:id="@+id/registerPassword"
                     style="@style/inputEditText"
-                    android:layout_below="@id/loginEmail"
-                    android:layout_toStartOf="@id/lblPassword"
+                    android:layout_below="@id/registerEmail"
+                    android:layout_toStartOf="@id/lblRePassword"
                     android:autofillHints=""
                     android:hint="@string/enterPassword"
                     android:inputType="textPassword"
                     tools:ignore="LabelFor" />
 
 
-                <Button
-                    android:id="@+id/loginBtnLogin"
-                    style="@style/styleButton"
+                <TextView
+                    android:id="@+id/lblRePassword"
+                    style="@style/titleTextView"
                     android:layout_below="@id/lblPassword"
-                    android:layout_marginTop="30dp"
-                    android:text="@string/login" />
+                    android:text="@string/rePassword" />
+
+                <EditText
+                    android:id="@+id/registerRePassword"
+                    style="@style/inputEditText"
+                    android:layout_below="@id/registerPassword"
+                    android:layout_toStartOf="@id/lblRePassword"
+                    android:autofillHints=""
+                    android:hint="@string/enterRePassword"
+                    android:inputType="textPassword"
+                    tools:ignore="LabelFor,TextFields" />
+
 
                 <Button
-                    android:id="@+id/loginBtnRegister"
+                    android:id="@+id/registerBtnRegister"
                     style="@style/styleButton"
-                    android:layout_below="@id/loginBtnLogin"
+                    android:layout_below="@id/lblRePassword"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/registerTitle" />
+
+                <Button
+                    android:id="@+id/registerBtnLogin"
+                    style="@style/styleButton"
+                    android:layout_below="@id/registerBtnRegister"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="50dp"
-                    android:text="@string/register" />
+                    android:text="@string/login" />
 
             </RelativeLayout>
         </RelativeLayout>
