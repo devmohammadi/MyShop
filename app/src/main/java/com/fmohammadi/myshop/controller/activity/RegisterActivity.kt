@@ -1,13 +1,12 @@
-package com.fmohammadi.myshop
+package com.fmohammadi.myshop.controller.activity
 
-import android.app.Activity
 import android.content.Intent
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
+import com.fmohammadi.myshop.R
 import com.google.firebase.auth.*
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

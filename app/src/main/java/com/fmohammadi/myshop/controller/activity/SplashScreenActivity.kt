@@ -1,4 +1,4 @@
-package com.fmohammadi.myshop
+package com.fmohammadi.myshop.controller.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="horizontal"
     android:layout_margin="15dp"
-    tools:context="com.fmohammadi.myshop.SplashScreenActivity">
+    tools:context="com.fmohammadi.myshop.controller.activity.SplashScreenActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         style="@style/lottieShape"

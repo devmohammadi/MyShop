@@ -1,4 +1,4 @@
-package com.fmohammadi.myshop
+package com.fmohammadi.myshop.controller.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,12 +6,8 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
+import com.fmohammadi.myshop.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_login.*
 import java.lang.Exception
 
@@ -55,12 +51,8 @@ class LoginActivity : AppCompatActivity() {
         mAuth!!.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // todo go to next page
-                    Toast.makeText(
-                        this,
-                        "شما وارد شدید",
-                        Toast.LENGTH_LONG
-                    ).show()
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
                 } else {
                     try {
                         throw task.exception!!
